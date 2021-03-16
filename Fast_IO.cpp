@@ -149,8 +149,7 @@ struct Fast_Out
         size_t _s_size = strlen(x);
         if(_s_size > _size) puts("Error: Buffer size is not enough!!!"), exit(1);
         if ((p + _s_size) >= (1<<20)) flush();
-        while(*x != '\0')
-        {
+        while(*x != '\0') {
             _buf[p++] = *(x++);
         }
     }
@@ -160,7 +159,7 @@ struct Fast_Out
     {
         if (p >= (1<<20)) flush();
         if(x < 0) _buf[p++] = 45, x = -x;
-        do{
+        do {
             _int_buf[ip++] = x % 10 + 48;
         }while(x /= 10);
         do {
