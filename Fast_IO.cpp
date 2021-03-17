@@ -64,6 +64,7 @@ struct Fast_In
             x = (x<<3) + (x<<1) + (ch - 48);
             ch = getc();
         }
+        x = f ? -x : x;
     }
 
     _force_inline Fast_In& operator>>(char& x)
