@@ -29,6 +29,7 @@
 #include <cctype>
 #include <cstdio>
 #include <cstring>
+#include <cstdlib>
 ```
 
 同时将需要的类粘贴到你的代码中。
